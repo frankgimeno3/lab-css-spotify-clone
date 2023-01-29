@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 /*
 Colors:
 
@@ -6,3 +7,98 @@ Green: #00B172
 White: #FFF
 
 */
+
+*{
+    margin:0;
+    padding: 0;
+    font-size: 20px;
+    font-family: "Roboto", sans-serif;
+}
+h1, h2, h3{
+    text-align: center;
+}
+h1{
+    color:white;
+    font-size: 8rem;;
+}
+h2{
+    font-size: 8rem;;
+}
+nav {
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 15vh;
+    width: 100vw;
+    background-color: white;
+
+}
+.logoDiv{
+    height: 5vh;
+    padding: 1vh;
+}
+.logoDiv img{
+    height: 100%;
+    width: auto;
+}
+.navmenu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style: none;
+}
+header{
+    background-image: url("../images/landing.jpg") ;
+    background-repeat: no-repeat, repeat;
+    background-size: cover;
+    height:100vh;
+    display: flex;
+    flex-direction: column;
+}
+header h3{
+    color:white;
+}
+.headerTxt{
+    padding:20%;
+}
+
+.contentSection{
+    display: flex;
+    flex-direction: column;
+}
+
+.articlesDiv{
+    padding-left: 10vw;
+    padding-right: 10vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.articlesDiv article{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.displaySection{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position:relative;
+    bottom: 1px;
+    background-color: #00B172;
+}
+.leftSideDisplaySectionElements{
+    justify-content: left;
+}
+.leftSideDisplaySectionElements div h3, h4, p{
+    color:white;
+}
+.centeredImage{
+    position:absolute;
+    top: 50%;
+    left:50%;
+}
